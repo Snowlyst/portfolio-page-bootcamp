@@ -15,27 +15,33 @@
   </head>
   <body>
     <!-- The Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-danger p-4">
+    <nav class="navbar navbar-expand-lg bg-success p-4">
       <div class="container-fluid">
         <div class="navbar brand lead">Abel's Portfolio Page</div>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
+          data-bs-target="#navigationmenu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navmenu">
+        <div class="collapse navbar-collapse" id="navigationmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="" class="nav-link text-light text-end">About Me</a>
+              <a href="#about-me" class="nav-link text-light text-end"
+                >About Me</a
+              >
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link text-light text-end">My Projects</a>
+              <a href="#my-projects" class="nav-link text-light text-end"
+                >My Projects</a
+              >
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link text-light text-end">Contact</a>
+              <a href="#contact" class="nav-link text-light text-end"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -43,7 +49,7 @@
     </nav>
     <!-- The Introduction -->
     <section class="bg-dark text-light pt-5 text-center">
-      <div class="container">
+      <div class="container" id="about-me">
         <div class="d-md-flex justify-content-center">
           <h2 class="order-1 p-5">
             I am <span class="text-info">Abel</span>.
@@ -52,25 +58,162 @@
               that hopefully makes it!
             </p>
             <p><span class="text-warning">Welcome to this page!</span></p>
+
+            <div style="font-size: small; text-align: right">
+              <img src="./images/spacecore.webp" alt="" width="50px" />
+              also I love space
+            </div>
           </h2>
           <img src="./images/cade.jpg" alt="" class="order-0 img-fluid" />
         </div>
       </div>
     </section>
-
     <!-- The Projects -->
+    <h3
+      class="p-3 m-md-0 text-center"
+      style="background-color: blueviolet"
+      id="my-projects"
+    >
+      My Projects
+    </h3>
     <section class="">
       <div
-        style="background-image: url(./images/background.jpg); height: 100vh"
-        class="container-fluid bg-image"
+        style="
+          background-image: url(./images/background.jpg);
+          height: fit-content;
+          background-size: cover;
+        "
+        class="container-fluid bg-image p-5"
       >
         <div class="row text-center">
-          <div class="col-md">123</div>
-          <div class="col-md">123</div>
-          <div class="col-md">123</div>
+          <div class="col-md-2 offset-md-1 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img src="./images/pastah.jpeg" alt="" height="275px" />
+              <a
+                href="https://snowlyst.github.io/recipe-site-bootcamp/"
+                target="_blank"
+              >
+                <div style="background-color: aquamarine">
+                  First Project: Recipe Site
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2 offset-md-2 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img src="./images/questionmark.png" alt="" height="275px" />
+              <a href="#">
+                <div style="background-color: aquamarine">
+                  Second Project: Soon
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2 offset-md-2 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img src="./images/questionmark.png" alt="" height="275px" />
+              <a href="#">
+                <div style="background-color: aquamarine">
+                  Third Project: Soon
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row text-center">
+          <div class="col-md-2 offset-md-1 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img src="./images/questionmark.png" alt="" height="275px" />
+              <a href="#" target="_blank">
+                <div style="background-color: aquamarine">
+                  Fourth Project: Soon
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2 offset-md-2 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img src="./images/questionmark.png" alt="" height="275px" />
+              <a href="#">
+                <div style="background-color: aquamarine">
+                  Fifth Project: Soon
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2 offset-md-2 col-sm-12">
+            <div class="card bg-white text-dark">
+              <img src="./images/questionmark.png" alt="" height="275px" />
+              <a href="#">
+                <div style="background-color: aquamarine">
+                  Sixth Project: Soon
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- Contact Area -->
+    <h3
+      class="p-3 m-md-0 text-center"
+      style="
+        background-color: darkorange;
+        height: fit-content;
+        background-size: cover;
+      "
+      id="contact"
+    >
+      Contact Me
+    </h3>
+    <section
+      class="text-light pt-5 text-center"
+      style="
+        background-image: url(./images/background2.webp);
+        background-size: cover;
+        height: fit-content;
+      "
+    >
+      <div class="container">
+        <div class="d-flex justify-content-center col-12">
+          <h2 class="">
+            You can reach me via these methods!
+
+            <p><span class="text-danger">Links below!</span></p>
+          </h2>
+        </div>
+      </div>
+      <div class="container justify-content-center" style="display: flex">
+        <div class="p-2">
+          <a href="mailto:gmail@gmail.gmail">
+            <img src="./images/gmail.png" alt="" style="height: 100px" />
+          </a>
+        </div>
+        <div class="p-2">
+          <a href="https://twitter.com/home">
+            <img src="./images/twitter.png" alt="" style="height: 100px" />
+          </a>
+        </div>
+        <div class="px-5">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="./images/facebook.png" alt="" style="height: 100px" />
+          </a>
+        </div>
+      </div>
+      <p
+        style="
+          font-size: small;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-style: italic;
+        "
+      >
+        P.S: The Links do not link to anyone's real particulars!
+      </p>
+    </section>
+    <!-- Bootstrap Scripts DO NOT TOUCH -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
